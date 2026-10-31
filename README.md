@@ -31,6 +31,8 @@ Peer dependencies: `@volo-uti/volo-web-ui ^0.1` · `react ^19` · `react-dom ^19
 
 ## Using it in a product
 
+Run the index step below before you plan or write any UI. It is what tells a coding agent which admin parts already exist, so it does not rebuild them.
+
 1. Set up `@volo-uti/volo-web-ui` first (tokens, Tailwind plugin, `VoloProvider`; see its README).
 2. Tell Tailwind to scan this package too, next to the `@volo-uti/volo-web-ui` line in the app's global CSS (the path is relative to the CSS file):
 
@@ -117,6 +119,10 @@ Peer dependencies: `@volo-uti/volo-web-ui ^0.1` · `react ^19` · `react-dom ^19
    pnpm exec volo-web-admin-ui-index           # writes the volo-web-admin-ui-index block in ./AGENTS.md
    pnpm exec volo-web-admin-ui-index --check   # exits 1 if the block is missing or stale
    ```
+
+## When something is missing
+
+If a part almost fits, try its props first. If one detail still cannot be done, write only that detail by hand in the product, mark it `// TODO(library: <what is missing>)` with what you tried, and open an issue in this repository. Do not copy or rebuild the whole part. When the package gets the detail, upgrade it and delete the marker. Search for `TODO(library:` to see what is still open.
 
 ## What it leaves to the product
 
