@@ -1,6 +1,6 @@
 {
   "name": "@volo-uti/volo-web-admin-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Admin screen parts (shell, sidebar, page header, list toolbar, data table) built on @volo-uti/volo-web-ui",
   "keywords": [
     "volo",
