@@ -1,0 +1,11 @@
+# Dependencies and build output
+node_modules
+dist
+build
+storybook-static
+*.log
+
+# Generated
+pnpm-lock.yaml
+# Package docs written by pnpm index
+docs/

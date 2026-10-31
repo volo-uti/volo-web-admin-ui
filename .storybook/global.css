@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@source "../stories";
+@source "../src";
+@source "../node_modules/@volo-uti/volo-web-ui/dist";
+@import "@volo-uti/volo-web-ui/theme/tokens.css";

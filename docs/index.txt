@@ -1,0 +1,10 @@
+[data-display]
+v-data-table|VDataTable: Data table with row selection, loading and error states and pagination on top of VTable.
+v-list-toolbar|VListToolbar: Bar above a list with search, filters and actions.
+[layout]
+v-admin-shell|VAdminShell: Admin page frame: sidebar, top bar and content area.
+v-page-header|VPageHeader: Page heading with breadcrumb, title, description and action slots.
+v-sidebar|VSidebar: Side navigation with icon-only collapse, one level of groups and permission-aware entries.
+[provider]
+admin-locale-text|defaultAdminLocaleText: English text, used when no localeText is provided.
+admin-provider|VAdminProvider: Provides admin text overrides and the permission check to the admin parts. useAdminLocaleText: Returns the resolved admin text. useCan: Returns the permission check given to VAdminProvider; it allows everything without one. VAccess: Renders its children only when the permission check allows `permission`.
